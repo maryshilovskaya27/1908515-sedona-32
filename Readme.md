@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Maryia Shylouskaya](https://up.htmlacademy.ru/htmlcss/32/user/1908515).
-* Наставник: `Неизвестно`.
+* Наставник: [Наталья Рыжова] (https://up.htmlacademy.ru/htmlcss/32/user/418965).
 
 ---
 
