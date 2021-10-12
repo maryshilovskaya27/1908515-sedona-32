@@ -1,0 +1,16 @@
+.main-index {
+    background:
+    url("../image/divider.svg") no-repeat 0px 428px,
+    url("../image/index-background.jpg") no-repeat;
+    background-color: white;
+}
+
+  .appointment {
+    background:
+    url("../image/submit-background.jpg") no-repeat;
+  }
+    
+.catalog-products {
+  background:
+  url("../image/catalog-background.jpg") no-repeat;
+}
