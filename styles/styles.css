@@ -5,12 +5,27 @@
     background-color: white;
 }
 
-  .appointment {
+.appointment {
     background:
     url("../image/submit-background.jpg") no-repeat;
-  }
-    
+}
+.advantages-list-house {
+    background: url("../image/house-icon.svg") no-repeat;
+
+}
+
+.advantages-list-burger {
+    background: url("../image/burger-icon.svg") no-repeat;
+}
+
+.advantages-list-souvenir {
+
+  background: 
+  url("../image/present-icon.svg") no-repeat;
+}
 .catalog-products {
   background:
   url("../image/catalog-background.jpg") no-repeat;
 }
+
+
