@@ -1,25 +1,257 @@
-.main-index {
-    background:
-    url("../image/divider.svg") no-repeat 0px 428px,
-    url("../image/index-background.jpg") no-repeat;
-    background-color: white;
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
 }
 
-.appointment {
-    background:
-    url("../image/submit-background.jpg") no-repeat;
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
 }
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color:black;
+  background-color:white;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #756257;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Pages */
+.page-header {
+  color:black;
+  background: white;
+}
+
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color:black;
+  background-color:white;
+  text-decoration: none;
+  text-transform: uppercase; 
+}
+
+.main-index-photo {
+  width: 1200px;
+  background-color: white;
+  color: black;
+  background:
+  url("../image/divider.svg") 0 344px,
+  url("../image/index-background.jpg");
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+/* Description */
+.description-white {
+  background-size: 100% auto;
+  background-color: white;
+  padding-bottom: 20px;
+}
+
+/* First paragraph*/
+.description-lead {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 5px;
+  font-weight: 700;
+  text-align: center;
+  color:black;
+  background-color:white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Second paragraph*/
+.description-text {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  color:black;
+  background-color:white;
+  text-decoration: none;
+  text-transform: none;
+}
+
+/* List */
+.advantages-list {
+  text-align: center;
+}
+
+/* Title */
+.advantages-description-blue {
+  background-color: #83B3D3;
+  padding: 5px;
+}
+.advantages-title-white {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color:white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.advantages-text-white {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 18px;
+  line-height: 10px;
+  font-weight: 400;
+  color:white;
+  text-decoration: none;
+  text-transform: none;
+  text-align: center;
+}
+
+.advantages-description-cyen {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.advantages-title {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+
 .advantages-list-house {
-    background: url("../image/house-icon.svg") no-repeat;
+  background: url("../image/house-icon.svg") no-repeat;
+}
+
+.advantages-description-lightblue {
+  background-color: rgba(131, 179, 211, 0.2); 
+}
+
+.advantages-list-cyen {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-list-house {
+  background: url("../image/house-icon.svg") no-repeat;
 }
 
 .advantages-list-burger {
-    background: url("../image/burger-icon.svg") no-repeat;
+  background: url("../image/burger-icon.svg") no-repeat;
 }
 
 .advantages-list-souvenir {
-  background: 
-  url("../image/present-icon.svg") no-repeat;
+background: 
+url("../image/present-icon.svg") no-repeat;
+}
+
+/*Search*/
+.search {
+  text-align: center;
+}
+
+.search-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color:black;
+  background-color:white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.search-text {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 22px;
+  line-height: 5px;
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+  text-transform: none;
+}
+.button {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #756257;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/*Submit*/
+.appointment {
+    background:
+    url("../image/submit-background.jpg") no-repeat; 
+    text-align: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.appointment-title {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.appointment-text {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 22px;
+  line-height: 5px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.button-submit {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/*Footer*/
+.footer-contacts-address-phone {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 40px;
+  line-height: 36px;
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .inner-header {
