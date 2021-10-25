@@ -149,32 +149,34 @@
         </section>
 
         <section>
-            <form class="sorting-type">
-                <label for="sorting">
-                    <span class="sorting-title">Найдено страниц:38</span>
-                </label>
-                <select class="select-control" id="sorting" name="sorting">
-                    <option value="popular">Сначала популярное</option>
-                    <option value="cheap">Сначала дешёвое</option>
-                    <option value="expensive">Сначала дорогое</option>
-                </select>
-                <button class="visually-hidden" type="submit">Отсортировать</button>
-            </form>
-            <div class="button-container">
-                <div class="button-mode-tile">
-                    <a class="button" href="#">
-                        <span class="visually-hidden">Показать список</span>
-                    </a>
-                </div>
-                <div class="button-mode-slideshow">
-                    <a class="button button-show" href="#">
-                        <span class="visually-hidden">Показать слайды</span>
-                    </a>
-                </div>
-                <div class="button-mode-list">
-                    <a class="button" href="#">
-                        <span class="visually-hidden">Показать карточки</span>
-                    </a>
+            <div class="sorting-container">
+                <form class="sorting-type">
+                    <label for="sorting">
+                        <span class="sorting-title">Найдено страниц:38</span>
+                    </label>
+                    <select class="select-control" id="sorting" name="sorting">
+                        <option value="popular">Сначала популярное</option>
+                        <option value="cheap">Сначала дешёвое</option>
+                        <option value="expensive">Сначала дорогое</option>
+                    </select>
+                    <button class="visually-hidden" type="submit">Отсортировать</button>
+                </form>
+                <div class="button-container">
+                    <div class="button-mode-tile">
+                        <a class="button" href="#">
+                            <span class="visually-hidden">Показать список</span>
+                        </a>
+                    </div>
+                    <div class="button-mode-slideshow">
+                        <a class="button button-show" href="#">
+                            <span class="visually-hidden">Показать слайды</span>
+                        </a>
+                    </div>
+                    <div class="button-mode-list">
+                        <a class="button" href="#">
+                            <span class="visually-hidden">Показать карточки</span>
+                        </a>
+                    </div>
                 </div>
             </div>
             <ul class="product-list">
@@ -227,35 +229,37 @@
                     </div>
                 </li>
             </ul>
-            <ul class="pagination">
-                <li class="pagination-item">
-                    <a class="pagination-link pagination-current">1</a>
-                </li>
-                <li class="pagination-item">
-                    <a class="pagination-link pagination-next" href="#">2</a>
-                </li>
-                <li class="pagination-item">
-                    <a class="pagination-link pagination-next" href="#">3</a>
-                </li>
-                <li class="pagination-item">
-                    <a class="pagination-link pagination-next" href="#">4</a>
-                </li>
-                <li class="pagination-item">
-                    <a class="pagination-link pagination-next" href="#">...</a>
-                </li>
-                <li class="pagination-item">
-                    <a class="pagination-link pagination-next" href="#">10</a>
-                </li>
-            </ul>
-            <form class="sorting-type">
-                <label class="sorting-title-bottom" for="amount">Гостиниц на странице</label>
-                <select class="select-control" id="amount" name="sorting">
-                    <option value="namber">4</option>
-                    <option value="namber">5</option>
-                    <option value="namber">6</option>
-                </select>
-                <button class="visually-hidden" type="submit">Отсортировать</button>
-            </form>
+            <div class="pagination-container">
+                <ul class="pagination">
+                    <li class="pagination-item">
+                        <a class="pagination-link pagination-current">1</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a class="pagination-link pagination-next" href="#">2</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a class="pagination-link pagination-next" href="#">3</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a class="pagination-link pagination-next" href="#">4</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a class="pagination-link pagination-next" href="#">...</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a class="pagination-link pagination-next" href="#">10</a>
+                    </li>
+                </ul>
+                <form class="sorting-type">
+                    <label class="sorting-title-bottom" for="amount">Гостиниц на странице</label>
+                    <select class="select-control" id="amount" name="sorting">
+                        <option value="namber">4</option>
+                        <option value="namber">5</option>
+                        <option value="namber">6</option>
+                    </select>
+                    <button class="visually-hidden" type="submit">Отсортировать</button>
+                </form>
+            </div>
         </section>
         <section class="appointment appointment-black">
             <h2 class="appointment-title-black">Подпишитесь на рассылку</h2>
@@ -269,7 +273,7 @@
             </form>
         </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer-container">
         <section class="footer-social">
             <h2 class="visually-hidden">Социальные сети</h2>
             <ul class="footer-social-list">

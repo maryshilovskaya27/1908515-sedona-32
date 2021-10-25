@@ -14,7 +14,14 @@
   font-display: swap;
 }
 
+ html {
+  height: 100%;
+}
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   width: 1200px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -56,6 +63,28 @@ ul {
 .page-header {
   color:black;
   background: white;
+  width: 1200px;
+  height: 65px;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 430px;
+}
+
+.navigation-user {
+  max-width: 250px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -67,6 +96,20 @@ ul {
   background-color:white;
   text-decoration: none;
   text-transform: capitalize; 
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
 }
 
 .navigation-text {
@@ -93,6 +136,12 @@ ul {
 }
 
 /* Description */
+
+.description {
+  width: 1200px;
+  height: 282px;
+}
+
 .description-white {
   background-size: 100% auto;
   background-color: white;
@@ -124,15 +173,35 @@ ul {
   text-transform: none;
 }
 
+/*Advantages description */
+.advantages-description-1 {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
 /* List */
 .advantages-list {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
   text-align: center;
+}
+
+.advantages-list-white {
+  width: 400px;
+  height: 384px;
 }
 
 /* Title */
 .advantages-description-blue {
   background-color: #83B3D3;
   padding: 5px;
+  width: 400px;
+  height: 384px;
 }
 .advantages-title-white {
   font-size: 24px;
@@ -155,7 +224,10 @@ ul {
 
 .advantages-description-cyen {
   background-color: rgba(131, 179, 211, 0.12);
+  width: 400px;
+  height: 384px;
 }
+
 .advantages-title {
   font-size: 24px;
   line-height: 28px;
@@ -175,29 +247,41 @@ ul {
   text-align: center;
 }
 .advantages-description-lightblue {
-  background-color: rgba(131, 179, 211, 0.2); 
+  background-color: rgba(131, 179, 211, 0.2);
+  width: 400px;
+  height: 384px;
 }
 
 .advantages-list-cyen {
   background-color: rgba(131, 179, 211, 0.12);
-
+  width: 400px;
+  height: 384px;
 }
 
 .advantages-list-house {
   background: url("../image/house-icon.svg") no-repeat;
+  display: flex;
+  align-self: center;
 }
 
 .advantages-list-burger {
   background: url("../image/burger-icon.svg") no-repeat;
+  display: flex;
+  align-self: center;
 }
 
 .advantages-list-souvenir {
 background: 
 url("../image/present-icon.svg") no-repeat;
+display: flex;
+justify-content: center;
+align-self: center;
 }
 
 /*Search*/
 .search {
+  width: 1200px;
+  height: 417px;
   text-align: center;
 }
 
@@ -232,6 +316,12 @@ url("../image/present-icon.svg") no-repeat;
 }
 
 /*Submit*/
+
+.appointment {
+  width: 1200px;
+  height: 411px;
+}
+
 .appointment-photo {
     background:
     url("../image/submit-background.jpg") no-repeat; 
@@ -270,6 +360,20 @@ url("../image/present-icon.svg") no-repeat;
 }
 
 /*Footer*/
+
+.page-footer {
+  width: 1200px;
+  height: 120px;
+}
+
+.page-footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin: 0;
+}
+
 .footer-contacts-address-phone {
   font-size: 40px;
   font-style: normal;
@@ -313,8 +417,14 @@ url("../image/present-icon.svg") no-repeat;
 /*Catalog-products*/
 
 .inner-header {
+  display: flex;
   background:
   url("../image/catalog-background.jpg");
+}
+
+.catalog-products {
+width: 1200px;
+height: 408px;
 }
 
 .inner-header-title {
@@ -391,6 +501,21 @@ color: white;
   text-transform: none;
 }
 
+.sorting-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  height: 134px;
+  margin: 0;
+  padding: 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .sorting-title {
   font-size: 30px;
   line-height: 39px;
@@ -425,6 +550,20 @@ color: white;
 }
 
 /*List*/
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  width: 1056px;
+  margin-left: 72px;
+  margin-right: 72px;
+}
+
+.product-card {
+  display: flex;
+  justify-content: space-between;
+}
+
 .product-card-title {
   font-size: 24px;
   line-height: 31px;
@@ -502,6 +641,15 @@ color: white;
 }
 
 /*Pagination*/
+
+.pagination-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 1056px;
+  height: 245px;
+}
+
 .pagination-current {
   width: 55px;
   height: 55px;
