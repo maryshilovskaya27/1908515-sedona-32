@@ -69,7 +69,6 @@ ul {
 
 .navigation {
   display: flex;
-  width: 1200px;
   margin: 0 auto;
 }
 
@@ -199,7 +198,6 @@ ul {
 /* Title */
 .advantages-description-blue {
   background-color: #83B3D3;
-  padding: 5px;
   width: 400px;
   height: 384px;
 }
@@ -280,6 +278,10 @@ align-self: center;
 
 /*Search*/
 .search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 1200px;
   height: 417px;
   text-align: center;
@@ -318,9 +320,24 @@ align-self: center;
 /*Submit*/
 
 .appointment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 1200px;
   height: 411px;
+  text-align: center;
 }
+
+.appointment-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+  height: 311px;
+  text-align: center;
+} 
 
 .appointment-photo {
     background:
@@ -362,16 +379,22 @@ align-self: center;
 /*Footer*/
 
 .page-footer {
-  width: 1200px;
+  width: 1056px;
   height: 120px;
+  padding: 72px;
 }
 
 .page-footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1200px;
   margin: 0;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .footer-contacts-address-phone {
@@ -391,7 +414,7 @@ align-self: center;
   background-color: white;
   background:
   url("../image/twitter.svg") no-repeat;
-  padding-bottom: 5px;
+  padding-right: 29px;
 }
 
 .social-facebook {
@@ -400,7 +423,7 @@ align-self: center;
   background-color: white;
   background:
   url("../image/facebook.svg") no-repeat;
-  padding-bottom: 5px;
+  padding-right: 29px;
 }
 
 .social-youtube {
@@ -409,7 +432,6 @@ align-self: center;
   background-color: white;
   background:
   url("../image/youtube.svg") no-repeat;
-  padding-bottom: 5px;
 }
 
 /*Catalog*/
@@ -417,7 +439,6 @@ align-self: center;
 /*Catalog-products*/
 
 .inner-header {
-  display: flex;
   background:
   url("../image/catalog-background.jpg");
 }
@@ -461,6 +482,10 @@ color: white;
   text-transform: none;
 }
 
+.catalog-filter-label {
+  color: white;
+}
+
 .control-label {
   font-size: 18px;
   line-height: 24px;
@@ -501,11 +526,14 @@ color: white;
   text-transform: none;
 }
 
+.catalog-container {
+  padding: 72px;
+}
+
 .sorting-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1200px;
   height: 134px;
   margin: 0;
   padding: 0;
@@ -554,9 +582,6 @@ color: white;
 .product-list {
   display: flex;
   flex-direction: column;
-  width: 1056px;
-  margin-left: 72px;
-  margin-right: 72px;
 }
 
 .product-card {
@@ -574,6 +599,21 @@ color: white;
   text-decoration: none;
 }
 
+.product-card-image-4 {
+  width: 90px;
+  background: url("../image/catalog/stars-4.svg") no-repeat;
+}
+
+.product-card-image-3 {
+  width: 90px;
+  background: url("../image/catalog/stars-3.svg") no-repeat;
+}
+
+.product-card-image-2 {
+  width: 90px;
+  background: url("../image/catalog/stars-2.svg") no-repeat;
+}
+
 . product-card-description {
   font-size: 18px;
   line-height: 23px;
@@ -584,7 +624,6 @@ color: white;
   text-decoration: none;
 }
 
-}
 .product-card-price {
   font-size: 18px;
   line-height: 23px;
@@ -627,6 +666,30 @@ color: white;
   text-decoration: none;
   text-transform: uppercase;
 }
+.product-card-button-container {
+  display: flex;
+  justify-content: center;
+  height: 116px;
+  padding-top: 31px;
+  padding-bottom: 30px;
+}
+
+.product-card-button {
+  width: 625px;
+  height: 55px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 288px;
+  margin-right: 287px;
+  margin-top: 31px;
+  margin-bottom: 30px;
+}
 
 .product-card-rating {
   width: 160px;
@@ -645,9 +708,13 @@ color: white;
 .pagination-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 1056px;
-  height: 245px;
+  height: 175px;
+}
+
+.pagination {
+  display: flex;
 }
 
 .pagination-current {
