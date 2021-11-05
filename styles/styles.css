@@ -82,20 +82,11 @@ ul {
   padding: 0;
   width: 430px;
   list-style-type: none;
-}
-
-.navigation-user {
-  max-width: 250px;
-  margin-left: auto;
-}
-
-.navigation-user .navigation-link {
-  min-width: 16px;
-  min-height: 22px;
+  margin-left: 71px;
+  margin-right: 72px;
 }
 
 .navigation-link {
-  padding: 24px 19px;
   display: block;
   font-size: 20px;
   line-height: 26px;
@@ -142,6 +133,8 @@ ul {
   url("../image/index-background.jpg");
   background-repeat: no-repeat;
   text-align: center;
+  padding-top: 51px;
+  padding-bottom: 83px;
 }
 
 /* Description */
@@ -184,10 +177,6 @@ ul {
 
 /*Advantages description */
 
-.advantages {
-  margin-bottom: 79px;
-}
-
 .advantages-description-1 {
   display: flex;
   justify-content: flex-start;
@@ -216,6 +205,7 @@ ul {
   width: 400px;
   height: 384px;
 }
+
 .advantages-title-white {
   font-size: 24px;
   line-height: 28px;
@@ -225,14 +215,20 @@ ul {
   text-transform: uppercase;
 }
 
-.advantages-text-white {
+.advantages-description-cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  color:white;
   text-decoration: none;
   text-transform: none;
   text-align: center;
+}
+
+.advantages-text-white {
+  color:white;
 }
 
 .advantages-description-cyen {
@@ -259,6 +255,7 @@ ul {
   text-transform: none;
   text-align: center;
 }
+
 .advantages-description-lightblue {
   background-color: rgba(131, 179, 211, 0.2);
   width: 400px;
@@ -297,9 +294,9 @@ align-self: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 1200px;
-  height: 417px;
   text-align: center;
+  padding-top: 91px;
+  padding-bottom: 91px;
 }
 
 .search-title {
@@ -339,9 +336,9 @@ align-self: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 1200px;
-  height: 411px;
   text-align: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .appointment-1 {
@@ -394,8 +391,6 @@ align-self: center;
 /*Footer*/
 
 .page-footer {
-  width: 1056px;
-  height: 120px;
   padding: 72px;
 }
 
@@ -404,6 +399,8 @@ align-self: center;
   justify-content: space-between;
   align-items: center;
   margin: 0;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 .footer-social-list {
