@@ -451,10 +451,10 @@ align-self: center;
 /*Catalog-products*/
 
 .inner-header {
-width: 1200px;
-height: 408px;
 background:
-url("../image/catalog-background.jpg");
+url("../image/catalog-background.jpg") no-repeat;
+padding-top: 35px;
+padding-bottom: 86px;
 }
 
 
@@ -466,11 +466,13 @@ font-size: 60px;
 line-height: 78px;
 color: white;
 margin: 0;
+padding-left: 71px;
 }
 
 .breadcrumbs {
   display: flex;
   flex-direction: row;
+  padding-left: 71px;
 }
 
 .breadcrumbs-hotels {
@@ -479,17 +481,20 @@ font-weight: 400;
 font-size: 16px;
 line-height: 21px;
 color: white;
+margin-left: 30px;
 }
 
-.breadcrumbs-nav-link {
+/* .breadcrumbs-nav-link {
   width: 5px;
   height: 8px;
   background:
   url("../image/catalog/nav-link.svg") no-repeat;
-}
+} */
 
 .catalog-filter{
   display: flex;
+  padding-left: 71px;
+  padding-top: 45px;
 }
 
 .catalog-filter-title {
@@ -545,7 +550,12 @@ color: white;
   text-transform: none;
 }
 
+.button-container-catalog {
+  display: flex;
+}
+
 .catalog-container {
+  padding-top: 50px;
   padding: 72px;
 }
 
@@ -553,23 +563,13 @@ color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 134px;
   margin: 0;
-  padding: 0;
+  padding-bottom: 76px;
 }
 
 .button-container {
   display: flex;
   justify-content: space-between;
-}
-
-.sorting-title {
-  font-size: 30px;
-  line-height: 39px;
-  font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
-  text-decoration: none;
 }
 
 .button-mode-tile {
@@ -606,6 +606,7 @@ color: white;
 .product-card {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 61px;
 }
 
 .product-card-title {
@@ -636,7 +637,7 @@ color: white;
   background: url("../image/catalog/stars-2.svg") no-repeat;
 }
 
-. product-card-description {
+.product-card-description {
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
@@ -692,21 +693,18 @@ color: white;
 .product-card-button-more {
   display: flex;
   justify-content: center;
-  height: 116px;
   width: 625px;
   height: 55px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
+  align-items: center;
   color: #FFFFFF;
   background-color: #83B3D3;
   text-decoration: none;
   text-transform: uppercase;
-  margin-left: 288px;
-  margin-right: 287px;
-  margin-top: 31px;
-  margin-bottom: 30px;
+  margin: auto;
 }
 
 .product-card-rating {
@@ -727,38 +725,56 @@ color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 1056px;
-  height: 175px;
 }
 
 .pagination {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 72px;
+}
+
+.pagination-item {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.padding-color {
+  background-color: #F2F2F2;
+}
+.padding-color-2 {
+  background-color: #83B3D3;
+}
+
+.pagination-link {
+  font-size: 20px;
+  line-height: 26px;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: none;
 }
 
 .pagination-current {
-  width: 55px;
-  height: 55px;
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: 400;
-  text-align: center;
-  color: black;
-  background-color: #F2F2F2;
-  text-decoration: none;
-  text-transform: none;
+  color:black;
 }
 
-.pagination-next {
-  width: 55px;
-  height: 55px;
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: 400;
-  text-align: center;
-  color: white;
-  background-color: #83B3D3;
+.sorting-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sorting-title {
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
   text-decoration: none;
-  text-transform: none;
 }
 
 .sorting-title-bottom {
@@ -779,4 +795,8 @@ color: white;
   text-decoration: none;
   text-transform: none;
   text-align: center;
+}
+
+.appointment-1 {
+  padding-bottom: 138px;
 }
