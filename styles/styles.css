@@ -69,16 +69,19 @@ ul {
 
 .navigation {
   display: flex;
+  width: 1200px;
   margin: 0 auto;
 }
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   margin: 0;
   padding: 0;
   width: 430px;
+  list-style-type: none;
 }
 
 .navigation-user {
@@ -86,7 +89,14 @@ ul {
   margin-left: auto;
 }
 
+.navigation-user .navigation-link {
+  min-width: 16px;
+  min-height: 22px;
+}
+
 .navigation-link {
+  padding: 24px 19px;
+  display: block;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -173,6 +183,11 @@ ul {
 }
 
 /*Advantages description */
+
+.advantages {
+  margin-bottom: 79px;
+}
+
 .advantages-description-1 {
   display: flex;
   justify-content: flex-start;
