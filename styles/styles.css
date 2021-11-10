@@ -110,6 +110,7 @@ ul {
 .logo {
   display: block;
   margin: 0 auto;
+  z-index: 5;
 }
 
 .navigation-text {
@@ -134,21 +135,19 @@ ul {
   background-repeat: no-repeat;
   text-align: center;
   padding-top: 51px;
-  padding-bottom: 83px;
 }
 
 /* Description */
 
 .description {
   width: 1200px;
-  height: 282px;
 }
 
 .description-white {
   background-size: 100% auto;
   background-color: white;
-  padding-bottom: 20px;
   text-align: center;
+  padding-bottom: 79px;
 }
 
 /* First paragraph*/
@@ -604,9 +603,11 @@ margin-left: 30px;
 }
 
 .product-card {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 217px auto 160px;
+  grid-template-rows: 181px;
   padding-bottom: 61px;
+  gap: 37px; 
 }
 
 .product-card-title {
@@ -616,6 +617,12 @@ margin-left: 30px;
   font-style: normal;
   color: #000000;
   text-transform: none;
+}
+
+.product-card-hotels {
+  display: grid;
+  grid-template-columns: 151px 160px auto;
+  gap: 8px; 
 }
 
 .product-card-link {
