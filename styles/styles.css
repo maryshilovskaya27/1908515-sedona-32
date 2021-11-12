@@ -614,7 +614,19 @@ border: none;
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  padding-bottom: 76px;
+  padding-bottom: 45px;
+}
+
+.select-control-1 {
+border: 2px solid #E6E6E6;
+box-sizing: border-box;
+border-radius: 4px;
+padding-top: 13px;
+padding-bottom: 12px;
+padding-right: 133px;
+padding-left: 17px;
+margin-right: 81px;
+margin-left: 192px;
 }
 
 .button-container {
@@ -679,7 +691,8 @@ border: none;
   display: grid;
   grid-template-columns: 217px auto 160px;
   grid-template-rows: 181px;
-  padding-bottom: 61px;
+  padding-top: 31px;
+  padding-bottom: 30px;
   gap: 37px; 
 }
 
