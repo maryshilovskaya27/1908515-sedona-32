@@ -133,25 +133,28 @@ ul {
   list-style-type: none;
   margin-left: 209px;
   margin-right: 72px;
-  width: 250px;
+  width: 350px;
   position: relative;
 }
 
-.navigation-user::before {
+.navigation-button {
+  position: relative;
+} 
+
+.navigation-button::before {
   position: absolute;
   width: 19px;
   height: 19px;
   left: 0;
   right: 0;
-  top: 17px;
-  bottom: 35px;
+  top: 0;
+  bottom: 0;
   content: "";
   background: url("../image/12.svg") no-repeat,
   url("../image/ellipse1.svg") no-repeat;
-  z-index: 10px;
 }
 
-.navigation-user:last-child::before {
+.navigation-button:last-child::before {
   content: none;
 }
 
