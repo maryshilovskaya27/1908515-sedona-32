@@ -107,9 +107,18 @@ ul {
 
 .navigation-link-current::before {
   position: absolute;
-  bottom: 0;
+  bottom: -18px;
   height: 2px;
   width: 70px;
+  background-color: #756257;
+  content: "";
+}
+
+.navigation-hotels::before {
+  position: absolute;
+  bottom: -18px;
+  height: 2px;
+  width: 93px;
   background-color: #756257;
   content: "";
 }
@@ -124,23 +133,25 @@ ul {
   list-style-type: none;
   margin-left: 209px;
   margin-right: 72px;
-  width: 232px;
+  width: 250px;
+  position: relative;
 }
 
-.navigation-list::before {
+.navigation-user::before {
   position: absolute;
   width: 19px;
   height: 19px;
-  left: 837px;
-  right: 252px;
+  left: 0;
+  right: 0;
   top: 17px;
   bottom: 35px;
   content: "";
   background: url("../image/12.svg") no-repeat,
   url("../image/ellipse1.svg") no-repeat;
+  z-index: 10px;
 }
 
-.navigation-list:last-child::before {
+.navigation-user:last-child::before {
   content: none;
 }
 
