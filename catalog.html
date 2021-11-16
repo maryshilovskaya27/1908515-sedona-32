@@ -126,13 +126,11 @@
                     </fieldset>
 
                     <fieldset class="catalog-filter-group catalog-filter-group-1">
-                        <legend class="catalog-filter-title">Стоимость,₽:</legend>
+                        <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                         <div class="catalog-filter-inputs">
                             <label class="catalog-filter-label">
-                                <input class="catalog-filter-input-1" type="number" name="min-price" placeholder="0 от">
-                            </label>
-                            <label class="catalog-filter-label">
-                                <input class="catalog-filter-input-2" type="number" name="max-price"
+                                <input class="catalog-filter-input" type="number" name="min-price" placeholder="0 от">
+                                <input class="catalog-filter-input" type="number" name="max-price"
                                     placeholder="9000 до">
                             </label>
                         </div>
@@ -321,12 +319,13 @@
         <section class="appointment-1 appointment-black">
             <h2 class="appointment-title-black">Подпишитесь на рассылку</h2>
             <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-            <form class="appointment-form-email">
-                <label for="appointment-email">
-                    Ваш e-mail
-                </label>
-                <input type="text" id="appointment-email">
-                <button class="button-submit" type="submit">Подписаться</button>
+            <form class="appointment-form-email" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="newsletter-email">
+              <label for="appointment-email">
+              </label>
+              <input class="field" placeholder="Ваш e-mail" type="email" id="appointment-email">
+            </p>
+              <button class="button-submit" type="submit">Подписаться</button>
             </form>
         </section>
     </main>
