@@ -55,10 +55,12 @@
                 <li class="cart-item">
                   <div class="cart-item-container">
                   <img src="image/hotel-2-small.png" width="48" height="48" alt="Фото отеля">
+                  <div class="cart-text">
                   <span class="cart-item-title">Desert Quail Inn<span>
                   <span class="cart-item-name">Мотель</span>
                 </div>
-                <div class="cart-item-delete">
+                </div>
+                <a class="cart-item-delete">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g opacity="0.2">
                         <path
@@ -75,14 +77,16 @@
                           fill="black" />
                       </g>
                     </svg>
-                  </div>
+                  </a>
                 <li class="cart-item">
                   <div class="cart-item-container">
                   <img src="image/hotel-3-small.png" width="48" height="48" alt="Фото отеля-2">
+                  <div class="cart-text">
                   <span class="cart-item-title">Villas at Poco Diablo</span>
                   <span class="cart-item-name">Апартаменты</span>
                 </div>
-                <div class="cart-item-delete">
+                </div>
+                <a class="cart-item-delete">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.2">
                       <path
@@ -99,7 +103,7 @@
                         fill="black" />
                     </g>
                   </svg>
-                </div>
+                </a>
                   <span class="visually-hidden">Удалить из корзины</span>
                 </li>
               </ul>
@@ -242,38 +246,38 @@
       <button class="modal-close-button">
         <span class="visually-hidden">Закрыть</span>
       </button>
-      <section class="modal-content">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="field-group">
+          <div class="field-group">
             <label class="field-caption" for="date-field">Дата заезда:</label>
             <input class="search-form-field field" type="text" id="date-field" name="date" placeholder="27 апреля 2020">
-            <p class="field-text-error">Мы не можем отправить вас в прошлое.</p>
-          </p>
-          <p class="field-group">
+          </div>
+          <p class="field-text-error">Мы не можем отправить вас в прошлое.</p>
+          <div class="field-group">
             <label class="field-caption" for="date-field">Дата выезда:</label>
             <input class="search-form-field field" type="text" id="date-field" name="date" placeholder="1 сентября 2021">
-            <p class="field-text">На эти даты есть свободные номера. Пока есть.</p>
-          </p>
-          <div class="field-group-people">
+          </div>
+          <p class="field-text">На эти даты есть свободные номера. Пока есть.</p>
+          <div class="field-group">
             <label class="field-caption" for="people-field">Взрослые:</label>
-          <p class="field-group">
+          <div class="field-group-people">
             <button class="button-choose" type="submit">-</button>
             <input class="people-form-field field" type="text" id="people-field" name="date" placeholder="2">
             <button class="button-choose" type="submit">+</button>
-          </p>
+          </div>
           <label class="field-caption" for="people-field">Дети:</label>
           <span class="round-blue"></span>
-          <p class="field-group">
+          <div class="field-group-people">
+            <button class="button-choose" type="submit">-</button>
             <input class="people-form-field field" type="text" id="people-field" name="date" placeholder="1">
-          </p>
+            <button class="button-choose" type="submit">+</button>
+          </div>
         </div>
           <button class="button search-form-button" type="submit">Найти</button>
         </form>  
-      </section>
     </div>
   </div> 
 </body>
