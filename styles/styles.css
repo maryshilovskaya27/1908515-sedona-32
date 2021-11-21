@@ -236,8 +236,8 @@ margin-top: -5px;
 }
 
 .cart-items-list {
-margin: 0;
-padding:0;
+  margin: 0;
+  padding:0;
 }  
 
 .cart-item-container {
@@ -252,11 +252,6 @@ padding:0;
 }
 
 .cart-item-container:focus-within{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 6px 12px;
   border: 3px solid #83B3D3;
   box-sizing: border-box;
   border-radius: 10px;
