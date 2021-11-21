@@ -1641,6 +1641,9 @@ padding-bottom: 13px;
 padding-left: 19px;
 margin-left: 192px;
 cursor: pointer;
+font-size: 18px;
+line-height: 23px;
+font-weight: 400;
 }
 
 .select-control-1:hover, .select-control:hover {
@@ -2170,6 +2173,9 @@ padding-bottom: 12px;
 padding-right: 133px;
 padding-left: 17px;
 margin-left: 51px;
+font-size: 18px;
+line-height: 23px;
+font-weight: 400;
 }
 
 /*Submit*/

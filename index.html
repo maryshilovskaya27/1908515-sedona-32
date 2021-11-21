@@ -113,7 +113,7 @@
               </ul>
             </div>
             <button class="button-cart-item-more" type="submit">Все избранные</button>
-          </div>
+          </div> 
         </li>
         <li class="navigation-item">
           <a class="navigation-link navigation-text" href="#">Хочу сюда!</a>
@@ -225,7 +225,7 @@
         </li>
         <li class="footer-social-item">
           <a class="social-button" href="https://www.facebook.com/htmlacademy">
-            <svg class="social-facebook" svg width="10" height="18" xmlns="http://www.w3.org/2000/svg">
+            <svg class="social-facebook" width="10" height="18" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 0C4.8 0 3 1.8 3 4v2H0v4h3v8h4v-8h3V6H7V4h3V0H7Z" />
             </svg>
             <span class="visually-hidden">Фейсбук</span>
@@ -273,8 +273,8 @@
           </div>
           <p class="field-text-error">Мы не можем отправить вас в прошлое.</p>
           <div class="field-group">
-            <label class="field-caption" for="date-field">Дата выезда:</label>
-            <input class="search-form-field field calendar-icon" type="text" id="date-field" name="date" placeholder="1 сентября 2021">
+            <label class="field-caption" for="date-field-1">Дата выезда:</label>
+            <input class="search-form-field field calendar-icon" type="text" id="date-field-1" name="date" placeholder="1 сентября 2021">
           </div>
           <p class="field-text">На эти даты есть свободные номера. Пока есть.</p>
           <div class="field-group">
@@ -285,17 +285,17 @@
             <button class="button-choose" type="submit">+</button>
           </div>
           <label class="field-caption" for="people-field">Дети:</label>
-          <span class="round-blue">
+          <div class="field-group-people">
+            <button class="button-choose" type="submit">-</button>
+            <input class="people-form-field field" type="text" id="people-field-1" name="date" placeholder="1">
+            <button class="button-choose" type="submit">+</button>
+          </div>
+          <div class="round-blue">
             <div class="tooltip toltip-triangle">
               <div class="tooltip-content">
                 <p class="tooltip-text">Укажите количество детей,<br> которые будут с вами, возраст<br> которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.</p>
               </div>
             </div>
-          </span>
-          <div class="field-group-people">
-            <button class="button-choose" type="submit">-</button>
-            <input class="people-form-field field" type="text" id="people-field" name="date" placeholder="1">
-            <button class="button-choose" type="submit">+</button>
           </div>
         </div>
           <button class="button search-form-button" type="submit">Найти</button>
