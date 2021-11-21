@@ -251,7 +251,7 @@ padding:0;
   opacity: 0.6;
 }
 
-.cart-item-container:focus{
+.cart-item-container:focus-within{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -305,6 +305,15 @@ padding:0;
   opacity: 1;  
 }
 
+.cart-item-delete-icon:focus-within {
+  opacity: 1; 
+  padding: 10px;
+  width: 36px;
+  height: 36px;
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
 
 .cart-item-delete-icon:active {
   opacity: 0.1;  
@@ -768,6 +777,7 @@ margin-top: 43px;
   padding-left: 22px;
 }
 
+
 .button-submit {
   font-family: inherit;
   font-size: 20px;
@@ -1003,6 +1013,14 @@ margin-top: 43px;
   margin-right: 30px;
 }
 
+.field-group::before {
+  content: url("../image/calendar.svg");
+  position: absolute;
+  opacity: 0.3;
+  padding-top: 18px;
+  right: 90px;
+}
+
 .field::placeholder {
   font-size: 18px;
   line-height: 40px;
@@ -1022,15 +1040,19 @@ margin-top: 43px;
   justify-content: space-between;
 }
 
+.field-group-container, .field-group-1  {
+  display: flex;
+}
 
 .field-group-people {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 133px;
   background: #F2F2F2;
-  margin-right: 15px;
+  margin-left: 50px;
+  margin-right: 55px;
   border-radius: 4px;
 }
 
@@ -1039,6 +1061,7 @@ margin-top: 43px;
   height: 50px;
   border-radius: 4px;
 }
+
 
 .round-blue {
   color: #FFFFFF;
@@ -1050,7 +1073,7 @@ margin-top: 43px;
   background-color: #83B3D3;
   border-radius: 50%;
   position: absolute;
-  left: 485px;
+  left: 470px;
   bottom: 184px;
   cursor: pointer;
 }
@@ -1144,8 +1167,36 @@ border-radius: 10px;
   color: #FFFFFF30;
 }
 
-.button-choose {
+.button-choose-minus {
+  display: flex;
+  align-self: center;
   border: none;
+  opacity: 0.3;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.button-choose-plus {
+  display: flex;
+  align-self: center;
+  border: none;
+  opacity: 0.3;
+  padding: 5px;
+}
+
+.button-choose-minus:hover, .button-choose-plus:hover{
+  opacity: 1;
+}
+
+.button-choose-minus:focus, .button-choose-plus:focus{
+  opacity: 1;
+  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.button-choose-minus:active, .button-choose-plus:active{
+  opacity: 0.2;
 }
 
 /*Social-icons*/
@@ -1293,7 +1344,7 @@ cursor: pointer;
   color: #FFFFFF60;
 }
 
-.breadcrumbs-hotels:focus-within {
+.breadcrumbs-hotels:focus{
   color: #FFFFFF;
   display: flex;
   padding: 6px 12px;
@@ -1837,11 +1888,12 @@ box-sizing: border-box;
   color: #756257;
 }
 
-.product-card-title:focus {
+.product-card-name:focus-within {
   color: #756257;
   border: 3px solid #83B3D3;
 box-sizing: border-box;
 border-radius: 10px;
+width: 220px;
 } 
 
 .product-card-title:active {
@@ -1874,6 +1926,10 @@ border-radius: 10px;
   text-decoration: none;
 }
 
+.product-card-link:focus {
+  outline: 3px solid #83B3D3;
+}
+
 .product-card-image-4 {
   width: 90px;
   background: url("../image/catalog/stars-4.svg") no-repeat;
@@ -1900,10 +1956,6 @@ border-radius: 10px;
 
 .product-card-image:hover {
   opacity: 0.6;
-}
-
-.product-card-image:focus {
-  outline: 3px solid #83B3D3;
 }
 
 .product-card-image:active {
@@ -2093,9 +2145,15 @@ border-radius: 10px;
   background: #68A2CA;
 }
 
-.pagination-color-2:focus {
+.pagination-link:focus {
   background: #68A2CA;
-  outline: 3px solid #756257;
+  width: 55px;
+  height: 55px;
+  color: #ffffff;
+  border: 3px solid #756257;
+  box-sizing: border-box;
+  border-radius: 4px;
+  position: absolute;
 }
 
 .pagination-color-2:active {
