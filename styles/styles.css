@@ -1279,6 +1279,7 @@ padding-left: 71px;
   display: flex;
   flex-direction: row;
   padding-left: 73px;
+  margin: 0;
 }
 
 .breadcrumbs-item {
@@ -1364,7 +1365,7 @@ padding: 0;
 }
 
 .catalog-filter-group-1 {
-margin-left: 167px;
+margin-left: 135px;
 }
 
 .catalog-filter{
@@ -1666,7 +1667,7 @@ border: 3px solid #FFFFFF;
 
 .catalog-container {
   margin: 72px;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .sorting-container {
