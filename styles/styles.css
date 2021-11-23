@@ -31,12 +31,6 @@ body {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* ul { 
-  margin: 0; 
-  padding: 0; 
-  list-style: none; 
-} */
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -333,6 +327,7 @@ margin-top: -5px;
 } 
 
 .button-cart-item-more {
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
@@ -345,7 +340,7 @@ margin-top: -5px;
   cursor: pointer;
   width: 400px;
   height: 60px;
-  border:none;
+  border: none;
 }
 
 .button-cart-item-more:hover {
@@ -467,6 +462,8 @@ margin-top: -5px;
   background-color:#ffffff;
   text-decoration: none;
   text-transform: uppercase;
+  margin: 0;
+  margin-top: 10px;
 }
 
 /* Second paragraph*/
@@ -479,6 +476,8 @@ margin-top: -5px;
   background-color:#ffffff;
   text-decoration: none;
   text-transform: none;
+  margin: 0;
+  margin-top: 33px;
 }
 
 /*Advantages description */
@@ -522,9 +521,10 @@ margin-top: -5px;
   color:#ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  width: 50%;
+  width: 43%;
   margin: 0 auto;
-  padding-bottom: 20px;
+  margin-top: 25px;
+  margin-bottom: 5px;
 }
 
 .advantages-description-cell {
@@ -634,6 +634,7 @@ padding-bottom: 23px;
   text-decoration: none;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 7px;
 }
 .search-text {
   font-size: 22px;
@@ -658,11 +659,11 @@ text-transform: uppercase;
 border: none;
 cursor: pointer;
 padding-top: 13px;
-padding-bottom: 17px;
-padding-right: 140px;
-padding-left: 140px;
+padding-bottom: 12px;
+padding-right: 149px;
+padding-left: 149px;
 border-radius: 10px;
-margin-top: 43px;
+margin-top: 35px;
 }
 
 .button-submit-1:hover {
@@ -688,7 +689,6 @@ margin-top: 43px;
   justify-content: center;
   text-align: center;
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .appointment-1 {
@@ -764,12 +764,16 @@ margin-top: 43px;
 .field {
   height: 59px;
   margin: 0;
-  font: inherit;
-  font-weight: 400;
   background-color:  #F2F2F2;
   border: none;
   border-radius: 10px 10px 10px 10px;
   padding-left: 22px;
+}
+
+.newsletter-email input::placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
 }
 
 
@@ -808,6 +812,7 @@ margin-top: 43px;
 
 /* Placeholder */
 .field::placeholder {
+  font-family: PT Sans;
   color:#000000;
   opacity: 0.6;
   font-weight: 400;
@@ -902,6 +907,7 @@ margin-top: 43px;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
+  z-index: 6;
 }
 
 .modal {
@@ -909,7 +915,7 @@ margin-top: 43px;
   margin: auto;
   padding: 40px;
   background-color: #FFFFFF;
-  border-radius: 50px;
+  border-radius: 30px;
 }
 
 .modal-search {
@@ -982,8 +988,8 @@ margin-top: 43px;
   text-transform: none;
   margin: 0;
   padding: 0;
-  margin-left: 161px;
-  margin-top: -5px;
+  margin-left: 185px;
+  margin-top: -12px;
   margin-bottom: 11px;
 }
 
@@ -996,13 +1002,13 @@ margin-top: 43px;
   text-transform: none;
   margin: 0;
   padding: 0;
-  margin-left: 161px;
-  margin-top: -5px;
+  margin-left: 185px;
+  margin-top: -12px;
   margin-bottom: 11px;
 }
 
 .search-form-field {
-  width: 420px;
+  width: 396px;
   height: 50px;
   border-radius: 4px;
   margin-right: 30px;
@@ -1016,13 +1022,14 @@ margin-top: 43px;
   right: 90px;
 }
 
-.field::placeholder {
+.field-group input::placeholder, .field-group-people input::placeholder{
   font-size: 18px;
   line-height: 40px;
   font-weight: 700;
   color: #000000;
   text-decoration: none;
   text-transform: none;
+  opacity: 1;
 }
 
 .search-form {
@@ -1035,7 +1042,11 @@ margin-top: 43px;
   justify-content: space-between;
 }
 
-.field-group-container, .field-group-1  {
+.field-group-1 {
+  display: flex;
+}
+
+.field-group-container  {
   display: flex;
 }
 
@@ -1046,8 +1057,8 @@ margin-top: 43px;
   justify-content: space-evenly;
   width: 133px;
   background: #F2F2F2;
-  margin-left: 50px;
-  margin-right: 55px;
+  margin-left: 72px;
+  margin-right: 8px;
   border-radius: 4px;
 }
 
@@ -1102,7 +1113,7 @@ margin-top: 43px;
   border-radius: 10px;
   border: 10px;
   top: 40px;
- left: -118px;
+  left: -118px;
 }
 
 .toltip-triangle::before {
@@ -1260,7 +1271,7 @@ border-radius: 10px;
 background:
 url("../image/catalog-background.jpg") no-repeat;
 padding-top: 35px;
-padding-bottom: 65px;
+padding-bottom: 71px;
 }
 
 
@@ -1402,7 +1413,7 @@ margin-left: 135px;
 
 /* Placeholder */
 .catalog-filter-input::placeholder {
-  weight: 400px;
+  font-weight: 400px;
   font-size: 18px;
   line-height: 23px;
   color: white;
