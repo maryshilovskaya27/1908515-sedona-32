@@ -192,8 +192,8 @@ body {
   
  .popover{
   position: absolute;
-  top: 63px;
-  right: -3px;
+  top: 62px;
+  right: 0px;
   z-index: 1;
   box-sizing: border-box;
   width: 400px;
@@ -227,8 +227,8 @@ body {
 .cart-text {
 display: flex;
 flex-direction: column;
-margin-top: 3px;
-margin-left: 15px;
+margin-top: 2px;
+margin-left: 16px;
 }
 
 .cart-items-list {
@@ -283,6 +283,7 @@ margin-left: 15px;
   flex-direction: column;  
   justify-content: center;
   margin-top: -21px;
+  margin-right: -2px;
   cursor: pointer;
 }
 
@@ -313,7 +314,7 @@ margin-left: 15px;
   content: "";
   position: absolute;
   top: -9px;
-  left: 190px;
+  left: 188px;
   width: 20px;
   height: 9px;
   background-image: url(../image/triangle.svg);
@@ -528,8 +529,8 @@ margin-left: 15px;
   text-transform: uppercase;
   width: 43%;
   margin: 0 auto;
-  margin-top: 25px;
-  margin-bottom: 5px;
+  margin-top: 27px;
+  margin-bottom: 12px;
 }
 
 .advantages-description-cell {
@@ -548,9 +549,34 @@ margin-left: 15px;
   color:#ffffff;
 }
 
+.advantages-text-white p:first-of-type {
+  margin-bottom: 4px;
+  padding-bottom: 8px;
+}
+
 .advantages-description-cyen {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
+}
+
+.advantages-description-cyen.advantages-description-cell .advantages-title {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.advantages-description-cyen.advantages-description-cell p:first-of-type {
+  margin-bottom: 4px;
+  padding-bottom: 8px;
+}
+
+.advantages-description-lightblue.advantages-description-cell .advantages-title {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.advantages-description-lightblue.advantages-description-cell p:first-of-type {
+  margin-bottom: 4px;
+  padding-bottom: 8px;
 }
 
 .advantages-title {
@@ -626,7 +652,7 @@ margin-top: 17px;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-top: 91px;
+  padding-top: 89px;
   padding-bottom: 91px;
 }
 
@@ -669,7 +695,7 @@ padding-bottom: 12px;
 padding-right: 149px;
 padding-left: 149px;
 border-radius: 10px;
-margin-top: 35px;
+margin-top: 37px;
 }
 
 .button-submit-1:hover {
@@ -694,7 +720,7 @@ margin-top: 35px;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-top: 94px;
+  padding-top: 56px;
 }
 
 .appointment-1 {
@@ -722,6 +748,7 @@ margin-top: 35px;
   text-decoration: none;
   text-transform: uppercase;
   margin: 0;
+  padding-top: 40px;
 }
 
 .appointment-text {
@@ -738,7 +765,7 @@ margin-top: 35px;
 .appointment-form-email {
   display: flex;
   flex-direction: row-reverse;
-  margin-top: 31px;
+  margin-top: 25px;
   margin-bottom: 94px;
 }
 
@@ -774,7 +801,7 @@ margin-top: 35px;
   background-color:  #F2F2F2;
   border: none;
   border-radius: 10px 10px 10px 10px;
-  padding-left: 22px;
+  padding-left: 20px;
 }
 
 .newsletter-email input::placeholder {
@@ -838,8 +865,8 @@ margin-top: 35px;
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding-top: 44px;
+  padding-bottom: 42px;
 }
 
 .footer-social-list {
@@ -937,8 +964,8 @@ margin-top: 35px;
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 54px;
-  right: 70px;
+  top: 53px;
+  right: 71px;
   width: 53px;
   height: 53px;
   background-color: #F2F2F2;
@@ -967,7 +994,7 @@ margin-top: 35px;
 .modal-title {
   margin: 0;
   margin-bottom: 62px;
-  margin-top: 24px;
+  margin-top: 18px;
   margin-left: 28px;
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
@@ -986,7 +1013,7 @@ margin-top: 35px;
   text-decoration: none;
   text-transform: none;
   margin-left: 30px;
-  margin-top: 5px;
+  margin-top: 4px;
 }
 
 .field-text {
@@ -999,8 +1026,8 @@ margin-top: 35px;
   margin: 0;
   padding: 0;
   margin-left: 185px;
-  margin-top: -12px;
-  margin-bottom: 11px;
+  margin-top: -8px;
+  margin-bottom: 7px;
 }
 
 .field-text-error {
@@ -1013,15 +1040,15 @@ margin-top: 35px;
   margin: 0;
   padding: 0;
   margin-left: 185px;
-  margin-top: -12px;
-  margin-bottom: 11px;
+  margin-top: -8px;
+  margin-bottom: 6px;
 }
 
 .search-form-field {
   width: 396px;
   height: 50px;
   border-radius: 4px;
-  margin-right: 30px;
+  margin-right: 34px;
 }
 
 .field-group::before {
@@ -1056,6 +1083,11 @@ margin-top: 35px;
   display: flex;
 }
 
+.field-group-2 {
+  display: flex;
+  margin-left: 18px;
+}
+
 .field-group-container  {
   display: flex;
 }
@@ -1072,12 +1104,15 @@ margin-top: 35px;
   border-radius: 4px;
 }
 
+.field-group-2 .field-group-people {
+  margin-left: 53px;
+}
+
 .people-form-field {
   width: 40px;
   height: 50px;
   border-radius: 4px;
 }
-
 
 .round-blue {
   color: #FFFFFF;
@@ -1089,7 +1124,7 @@ margin-top: 35px;
   background-color: #83B3D3;
   border-radius: 50%;
   position: absolute;
-  left: 470px;
+  left: 467px;
   bottom: 184px;
   cursor: pointer;
 }
@@ -1122,7 +1157,7 @@ margin-top: 35px;
   border-radius: 10px;
   border: 10px;
   top: 40px;
-  left: -118px;
+  left: -116px;
 }
 
 .toltip-triangle::before {
@@ -1136,9 +1171,9 @@ margin-top: 35px;
 }
 
 .tooltip-content {
-padding-top: 5px;
+padding-top: 3px;
 padding-left: 22px;
-padding-bottom: 18px; 
+padding-bottom: 8px; 
 padding-right: 18px; 
 }
 
@@ -1190,6 +1225,8 @@ border-radius: 10px;
   opacity: 0.3;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-bottom: 5px;
+  margin-left: 22px;
 }
 
 .button-choose-plus {
@@ -1198,6 +1235,8 @@ border-radius: 10px;
   border: none;
   opacity: 0.3;
   padding: 5px;
+  margin-bottom: 5px;
+  margin-right: 22px;
 }
 
 .button-choose-minus:hover, .button-choose-plus:hover{
@@ -1281,7 +1320,7 @@ border-radius: 10px;
 background:
 url("../image/catalog-background.jpg") no-repeat;
 padding-top: 32px;
-padding-bottom: 74px;
+padding-bottom: 71px;
 margin-top: -5px;
 background-color: #3F5E72;
 background-size: cover;
@@ -1626,7 +1665,7 @@ box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
 }
 
 .button-apply {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 21px;
   font-weight: 700;
   width: 160px;
@@ -1695,8 +1734,10 @@ box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
 }
 
 .catalog-container {
-  margin: 72px;
-  margin-top: 40px;
+  margin-left: 72px;
+  margin-right: 72px;
+  margin-top: 41px;
+  margin-bottom: 61px;
 }
 
 .sorting-container {
@@ -1704,7 +1745,7 @@ box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  padding-bottom: 45px;
+  padding-bottom: 49px;
 }
 
 .select-control-1 {
@@ -1714,9 +1755,10 @@ border-radius: 4px;
 width: 287px;
 padding-top: 12px;
 padding-bottom: 13px;
-padding-left: 19px;
-margin-left: 192px;
+padding-left: 13px;
+margin-left: 191px;
 cursor: pointer;
+font-family: "PT Sans";
 font-size: 18px;
 line-height: 23px;
 font-weight: 400;
@@ -1854,7 +1896,7 @@ box-sizing: border-box;
   position: relative;
   flex-grow: 1;
   order: 2;
-  bottom: 764px;
+  bottom: 732px;
   width: 1056px;
   border-top: 1px solid #E6E6E6;
   transform: rotate(180deg);
@@ -1865,7 +1907,7 @@ box-sizing: border-box;
   position: relative;
   flex-grow: 1;
   order: 2;
-  bottom: -120px;
+  bottom: -109px;
   width: 1056px;
   border-top: 1px solid #E6E6E6;
   transform: rotate(180deg);
@@ -1876,7 +1918,7 @@ box-sizing: border-box;
   position: relative;
   flex-grow: 1;
   order: 2;
-  bottom: 0px;
+  bottom: 6px;
   width: 1056px;
   border-top: 1px solid #E6E6E6;
   transform: rotate(180deg);
@@ -1888,14 +1930,14 @@ box-sizing: border-box;
   display: grid;
   grid-template-columns: 180px auto 160px;
   grid-template-rows: 120px;
-  padding-top: 31px;
+  padding-top: 23px;
   gap: 37px; 
 }
 
 .product-card-hotels {
   display: grid;
-  grid-template-columns: 160px 160px auto;
-  grid-template-rows: 32px 1fr 1fr;
+  grid-template-columns: 150px 160px auto;
+  grid-template-rows: 20px 1fr 36px;
   gap: 8px; 
 }
 
@@ -1907,6 +1949,7 @@ box-sizing: border-box;
   color: #000000;
   text-transform: none;
   margin: 0;
+  margin-top: -3px;
 }
 
 .product-card-title:hover {
@@ -1961,6 +2004,8 @@ width: 220px;
   margin: 0;
   height: 20px;
   background-position: center;
+  margin-top: 2px;
+  margin-left: -1px;
 }
 
 .product-card-image-3 {
@@ -1969,6 +2014,8 @@ width: 220px;
   margin: 0;
   height: 20px;
   background-position: center;
+  margin-top: 2px;
+  margin-left: -1px;
 }
 
 .product-card-image-2 {
@@ -1977,6 +2024,8 @@ width: 220px;
   margin: 0;
   height: 20px;
   background-position: center;
+  margin-top: 2px;
+  margin-left: -1px;
 }
 
 .product-card-image:hover {
@@ -2016,8 +2065,7 @@ width: 220px;
   background-color: #756257;
   text-decoration: none;
   text-transform: uppercase;
-  padding-top: 9px;
-  padding-bottom: 10px;
+  padding-top: 7px;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 4px;
@@ -2047,8 +2095,7 @@ width: 220px;
   background-color: #83B3D3;
   text-decoration: none;
   text-transform: uppercase;
-  padding-top: 9px;
-  padding-bottom: 10px;
+  padding-top: 7px;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 4px;
@@ -2078,8 +2125,7 @@ width: 220px;
   background-color:#7DB54F;
   text-decoration: none;
   text-transform: uppercase;
-  padding-top: 9px;
-  padding-bottom: 10px;
+  padding-top: 7px;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 4px;
@@ -2116,7 +2162,7 @@ width: 220px;
   text-transform: uppercase;
   margin: auto;
   border-radius: 4px;
-  margin-top: 31px;
+  margin-top: 22px;
   margin-bottom: 30px;
 }
 
@@ -2131,8 +2177,8 @@ width: 220px;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
-  padding-top: 9px;
-  padding-bottom: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   margin: 0;
 }
 
@@ -2154,7 +2200,7 @@ width: 220px;
   margin-left: 72px;
   padding: 0; 
   list-style: none; 
-  width: 375px;
+  width: 376px;
   flex-wrap: wrap;
 }
 
@@ -2255,9 +2301,9 @@ box-sizing: border-box;
 border-radius: 4px;
 padding-top: 13px;
 padding-bottom: 12px;
-padding-right: 133px;
-padding-left: 17px;
-margin-left: 51px;
+padding-right: 112px;
+padding-left: 10px;
+margin-left: 52px;
 font-size: 18px;
 line-height: 23px;
 font-weight: 400;
@@ -2277,5 +2323,8 @@ font-weight: 400;
 
 .appointment-title-black {
   text-transform: uppercase;
-  margin-top: 89px;
+  font-size: 30px;
+  line-height: 36px;
+  margin-top: 87px;
+  margin-bottom: 8px;
 }
