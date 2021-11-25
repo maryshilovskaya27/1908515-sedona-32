@@ -81,7 +81,7 @@ body {
   gap: 33px;
   list-style-type: none;
   margin-left: 71px;
-  margin-right: 152px;
+  margin-right: 86px;
   margin-bottom: 8px;
   position: relative;
   list-style-type: none;
@@ -100,6 +100,8 @@ body {
   border: none;
   cursor: pointer;
   position: relative;
+  border: 3px solid transparent;
+  outline: none;
 }
 
 .navigation-link:hover {
@@ -111,7 +113,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 6px 12px;
+  padding: 6px 8px;
   color: #756257;
   border: 3px solid #83B3D3;
   box-sizing: border-box;
@@ -183,7 +185,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 6px 12px;
+    padding: 6px 8px;
     color: #756257;
     border: 3px solid #83B3D3;
     box-sizing: border-box;
@@ -285,6 +287,8 @@ margin-left: 16px;
   margin-top: -21px;
   margin-right: -2px;
   cursor: pointer;
+  border: none;
+  background-color: #ffffff;
 }
 
 .cart-item-delete-icon {
@@ -343,9 +347,10 @@ margin-left: 16px;
   width: 400px;
   border: none;
   margin-left: -1px;
-  margin-bottom: -1px;
   padding-top: 19px;
   padding-bottom: 19px;
+  padding-left: 140px;
+  padding-right: 140px;
 }
 
 .button-cart-item-more:hover {
@@ -877,7 +882,18 @@ margin-top: 37px;
   margin: 0; 
   padding: 0; 
   list-style: none; 
-  width: 108px;
+  /* width: 108px; */
+  outline: none;
+}
+
+.social-button {
+  outline: none;
+  border: 3px solid transparent;
+}
+
+.social-button:focus {
+  outline: 3px solid #83B3D3;
+  padding: 6px 8px;
 }
 
 .footer-contacts-address-phone {
@@ -1271,6 +1287,7 @@ border-radius: 10px;
   flex-grow: 0;
   fill: #68A2CA;
   padding: 10px;
+  outline:none;
 }
 
 .social-twitter {
@@ -1458,6 +1475,7 @@ margin-left: 150px;
   background-color: rgba(0, 0, 0, 0);
   padding-top: 8px;
   padding-left: 17px;
+  outline: none;
 }
 
 .catalog-filter-list {
@@ -1501,7 +1519,7 @@ margin-left: 150px;
   border: 2px solid #FFFFFF60;
 }
 
-.catalog-filter-label:focus {
+.catalog-filter-label:focus-within {
   border: 2px solid #FFFFFF;
 box-sizing: border-box;
 box-shadow: 0px 0px 0px 3px #81B3D2;
@@ -2319,6 +2337,7 @@ font-weight: 400;
   text-transform: none;
   text-align: center;
   margin: 0;
+  margin-bottom: 35px;
 }
 
 .appointment-title-black {
